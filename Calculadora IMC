@@ -1,0 +1,21 @@
+Console.OutputEncoding  = System.Text.Encoding.UTF8;
+//declaração de variáveis locais
+Console.WriteLine("Calculadora de IMC🧮");
+float imc = 0;
+Console.WriteLine(" digite o Peso: ".Replace (".",","));
+float.TryParse(Console.ReadLine()!, out float Peso);
+Console.Write(" digite a Altura: ".Replace(".", ","));
+float.TryParse(Console.ReadLine()!, out float Altura);
+imc = (float)(Peso / Math.Round(Math.Pow(Altura, 2)));
+
+if (imc < 18.5) { 
+    Console.WriteLine($"\n0 Peso: {Peso}\nAltura: {Altura}nIMC: {Math.Round(IMC,2)}\n Magreza");
+)else if (imc < 24.9){
+        Console.WriteLine($"\n0 Peso: {Peso}\nAltura: {Altura}nIMC: {Math.Round(IMC, 2)}\n Normal");
+)else if (imc < 29.9)
+        {
+            Console.WriteLine($"\n0 Peso: {Peso}\nAltura: {Altura}nIMC: {Math.Round(IMC, 2)}\n Obesidade I");
+)else if (imc < 39.9)
+            {
+            Console.WriteLine($"\n0 Peso: {Peso}\nAltura: {Altura}nIMC: {Math.Round(IMC, 2)}\n Obesidade II");
+)else if (imc < 40)
