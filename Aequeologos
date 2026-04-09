@@ -1,0 +1,80 @@
+// define o tamanho
+using System;
+
+Console.Write("Escolha o tamanho do lado: ");
+int.TryParse(Console.ReadLine(), out int lado);
+int rodadas = 0;
+
+while (rodadas < 3)
+{
+    // calculo lado
+    if (lado != 0)
+    {
+        Console.WriteLine($"A area de {lado} é {lado * lado}");
+        rodadas++;
+    }
+    else
+    {
+        Console.WriteLine("Numero invalido");
+        rodadas = 3;
+    }
+}
+// fofuxo
+Console.Write("deina um raio em metros: ");
+float.TryParse(Console.ReadLine(), out float raio);
+double area = 3.14 * (raio * raio);
+if (area >= 10)
+{
+    Console.WriteLine($"Você conseguiu enfrentar a maldição do infoxuxo com o resultado: {area}");
+}
+else
+{
+    Console.WriteLine($"Você vivera amaldiçoado para sempre pois seu resultado deu menos de 10: {area}");
+}
+
+//arqueologa
+//referência
+void ExibirMenu()
+{
+    Console.WriteLine("Digite 1 para: poríferos");
+    Console.WriteLine("Digite 2 para: cnidários");
+    Console.WriteLine("Digite 3 para: platelmintos");
+    Console.WriteLine("Digite 4 para: moluscos");
+    Console.WriteLine("Digite 5 para: anelídios");
+    Console.WriteLine("Digite 6 para: artrópodes");
+    Console.WriteLine("Digite 7 para: urocordados");
+}
+ExibirMenu();
+Console.Write("Faça sua adição: ");
+int.TryParse(Console.ReadLine(), out int escolha);
+
+switch (escolha)
+{
+    case 1:
+        Console.WriteLine("Foi adicionado poríferos a lista");
+        break;
+
+    case 2:
+        Console.WriteLine("Foi adicionado cnidários a lista");
+        break;
+
+    case 3:
+        Console.WriteLine("Foi adicionado platelmintos a lista");
+        break;
+
+    case 4:
+        Console.WriteLine("Foi adicionado moluscos a lista");
+        break;
+
+    case 5:
+        Console.WriteLine("Foi adicionado anelídios a lista");
+        break;
+
+    case 6:
+        Console.WriteLine("Foi adicionado artrópodes a lista");
+        break;
+
+    case 7:
+        Console.WriteLine("Foi adicionado urocordados a lista");
+        break;
+}
