@@ -1,0 +1,6 @@
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+Console.WriteLine("convesor de célcius C° para fahrenheit F°🔥🌡️🌡️" +
+    "\n digite o valor C° : ");
+float. TryParse(Console.ReadLine(), out float celsius);
+float resultado = (celsius * 9 / 5) + 32;
+Console.WriteLine($"A Conversão de C {celsius} : é F°:{resultado}🤒");
